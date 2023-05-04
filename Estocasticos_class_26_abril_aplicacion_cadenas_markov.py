@@ -90,3 +90,45 @@ print(resultado10_AS)
 
 
 
+
+
+## Imaginar el caso en que la empresa AS genera una campaña publicitaria para quitar clientes a MF
+
+# LA MATRIZ DE TRANSICIÓN DE ESTADOS CAMBIA 
+matriz_transicion_inicial_estrategia_AS1 = np.array([[0.85, 0.15], [0.2, 0.8]])
+
+
+#LA PROBABILIDAD EN EL TIEMPO INICIAL O DISTRIBUCIÓN DE PORBABILIDAD INICAL
+probabilidad_cero_AS = np.array([1, 0])
+
+# calculate p^100
+matriz_transicion_100_estrategia_AS1 = np.linalg.matrix_power(matriz_transicion_inicial_estrategia_AS1, 100)
+# print the result
+print(f"La matriz_transicion_periodo_100 DADA LA ESTRATEGIA AS_1 es: {matriz_transicion_100_estrategia_AS1}")
+
+resultado100__estrategia_AS1= np.dot(probabilidad_cero_AS , matriz_transicion_100_estrategia_AS1)
+print(f"La función de distribucion en periodo 100  DADA LA ESTRATEGIA AS_1 es: {resultado100__estrategia_AS1}")
+
+
+
+
+
+
+
+## Imaginar el caso en que la empresa AS genera una campaña publicitaria AUN MAS AGRESIVA para quitar clientes a MF
+
+# LA MATRIZ DE TRANSICIÓN DE ESTADOS CAMBIA 
+matriz_transicion_inicial_estrategia_AS2 = np.array([[0.75, 0.25], [0.2, 0.8]])
+
+
+#LA PROBABILIDAD EN EL TIEMPO INICIAL O DISTRIBUCIÓN DE PORBABILIDAD INICAL
+probabilidad_cero_AS_2 = np.array([1, 0])
+
+# calculate p^100
+matriz_transicion_100_estrategia_AS2 = np.linalg.matrix_power(matriz_transicion_inicial_estrategia_AS2, 100)
+# print the result
+print(f"La matriz_transicion_periodo_100 DADA LA ESTRATEGIA AS_2 es: {matriz_transicion_inicial_estrategia_AS2}")
+
+resultado100__estrategia_AS2= np.dot(probabilidad_cero_AS_2 , matriz_transicion_100_estrategia_AS2)
+print(f"La función de distribucion en periodo 100  DADA LA ESTRATEGIA AS_2 es: {resultado100__estrategia_AS2}")
+
