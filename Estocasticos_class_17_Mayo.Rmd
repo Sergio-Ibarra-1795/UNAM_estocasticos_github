@@ -1,0 +1,43 @@
+---
+title: "Estocasticos_class_17_Mayo"
+author: "Sergibar"
+date: "2023-05-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Proceso estocasticos
+
+### El problema de la ruina 
+
+```{r}
+#Capital inical 
+c <- 20 
+
+# vARIABLE auxiliar
+
+aux <- c
+
+while (aux>0){
+  aux <- 2*runif(1)
+}
+```
+
+
+
+```{r}
+install.packages(markovchain)
+library(markovchain)
+
+
+```
+
+
+```{r}
+data(rain)
+
+```
+
