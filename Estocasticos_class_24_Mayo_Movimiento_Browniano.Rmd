@@ -1,0 +1,19 @@
+---
+title: "Estocasticos_class_24_Mayo_Movimiento_Browniano"
+author: "Sergibar"
+date: "2023-05-24"
+output: html_document
+---
+
+## Movimiento browniano 
+
+
+### Ejemplo de modelación del precio de una acción
+
+```{r}
+#install.packages("sde")
+library("sde")
+
+```
+
+
